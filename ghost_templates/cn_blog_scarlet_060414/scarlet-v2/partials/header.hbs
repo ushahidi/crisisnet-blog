@@ -1,0 +1,17 @@
+<!-- main document markup start -->
+        <!-- start header -->
+        <div class="site-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+            <header class="container" >
+                <div class="row">
+                    <div class="col-sm-12">
+                        {{#if @blog.logo}}
+                        <h1 class="logo"><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a></h1>
+                        {{else}}
+                        <h1 class="logo"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+                        {{/if}}
+                        <h2 class="site-description">The firehose of <strong>global crisis data</strong></h2>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- end header -->

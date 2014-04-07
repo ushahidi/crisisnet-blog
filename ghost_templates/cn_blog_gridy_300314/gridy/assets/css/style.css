@@ -1,0 +1,2484 @@
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../../../gridy-assets-src/css/sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../../../gridy-assets-src/css/sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../../../gridy-assets-src/css/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../../../gridy-assets-src/css/sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 66, ../../../gridy-assets-src/css/sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 76, ../../../gridy-assets-src/css/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, ../../../gridy-assets-src/css/sass/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 96, ../../../gridy-assets-src/css/sass/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 105, ../../../gridy-assets-src/css/sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 118, ../../../gridy-assets-src/css/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 127, ../../../gridy-assets-src/css/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 136, ../../../gridy-assets-src/css/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 144, ../../../gridy-assets-src/css/sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 152, ../../../gridy-assets-src/css/sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 162, ../../../gridy-assets-src/css/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 174, ../../../gridy-assets-src/css/sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 183, ../../../gridy-assets-src/css/sass/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 191, ../../../gridy-assets-src/css/sass/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 199, ../../../gridy-assets-src/css/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 208, ../../../gridy-assets-src/css/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 215, ../../../gridy-assets-src/css/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 219, ../../../gridy-assets-src/css/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 231, ../../../gridy-assets-src/css/sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 239, ../../../gridy-assets-src/css/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 251, ../../../gridy-assets-src/css/sass/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 263, ../../../gridy-assets-src/css/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 274, ../../../gridy-assets-src/css/sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 288, ../../../gridy-assets-src/css/sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 300, ../../../gridy-assets-src/css/sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 312, ../../../gridy-assets-src/css/sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 327, ../../../gridy-assets-src/css/sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 337, ../../../gridy-assets-src/css/sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 347, ../../../gridy-assets-src/css/sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, ../../../gridy-assets-src/css/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 371, ../../../gridy-assets-src/css/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 380, ../../../gridy-assets-src/css/sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 390, ../../../gridy-assets-src/css/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 403, ../../../gridy-assets-src/css/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 8, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.container:before,
+.container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 16, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 19, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* line 24, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.row:before,
+.row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 32, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 35, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 41, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11 {
+  float: left;
+}
+
+/* line 44, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 47, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-11 {
+  width: 91.66666666666666%;
+}
+
+/* line 50, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-10 {
+  width: 83.33333333333334%;
+}
+
+/* line 53, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 56, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-8 {
+  width: 66.66666666666666%;
+}
+
+/* line 59, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-7 {
+  width: 58.333333333333336%;
+}
+
+/* line 62, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 65, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-5 {
+  width: 41.66666666666667%;
+}
+
+/* line 68, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-4 {
+  width: 33.33333333333333%;
+}
+
+/* line 71, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 74, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-2 {
+  width: 16.666666666666664%;
+}
+
+/* line 77, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-1 {
+  width: 8.333333333333332%;
+}
+
+/* line 80, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 83, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-11 {
+  right: 91.66666666666666%;
+}
+
+/* line 86, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-10 {
+  right: 83.33333333333334%;
+}
+
+/* line 89, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 92, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-8 {
+  right: 66.66666666666666%;
+}
+
+/* line 95, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-7 {
+  right: 58.333333333333336%;
+}
+
+/* line 98, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 101, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-5 {
+  right: 41.66666666666667%;
+}
+
+/* line 104, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-4 {
+  right: 33.33333333333333%;
+}
+
+/* line 107, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 110, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-2 {
+  right: 16.666666666666664%;
+}
+
+/* line 113, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-1 {
+  right: 8.333333333333332%;
+}
+
+/* line 116, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-pull-0 {
+  right: 0%;
+}
+
+/* line 119, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 122, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-11 {
+  left: 91.66666666666666%;
+}
+
+/* line 125, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-10 {
+  left: 83.33333333333334%;
+}
+
+/* line 128, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 131, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-8 {
+  left: 66.66666666666666%;
+}
+
+/* line 134, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-7 {
+  left: 58.333333333333336%;
+}
+
+/* line 137, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 140, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-5 {
+  left: 41.66666666666667%;
+}
+
+/* line 143, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-4 {
+  left: 33.33333333333333%;
+}
+
+/* line 146, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 149, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-2 {
+  left: 16.666666666666664%;
+}
+
+/* line 152, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-1 {
+  left: 8.333333333333332%;
+}
+
+/* line 155, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-push-0 {
+  left: 0%;
+}
+
+/* line 158, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+/* line 161, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66666666666666%;
+}
+
+/* line 164, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333333333334%;
+}
+
+/* line 167, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 170, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66666666666666%;
+}
+
+/* line 173, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-7 {
+  margin-left: 58.333333333333336%;
+}
+
+/* line 176, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 179, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66666666666667%;
+}
+
+/* line 182, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333333333333%;
+}
+
+/* line 185, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 188, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-2 {
+  margin-left: 16.666666666666664%;
+}
+
+/* line 191, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-1 {
+  margin-left: 8.333333333333332%;
+}
+
+/* line 194, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+@media (min-width: 768px) {
+  /* line 198, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .container {
+    width: 750px;
+    width: 100%;
+  }
+
+  /* line 203, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
+    float: left;
+  }
+
+  /* line 206, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 209, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 212, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 215, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 218, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 221, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 224, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 227, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 230, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 233, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 236, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 239, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 242, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 245, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 248, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 251, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 254, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 257, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 260, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 263, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 266, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 269, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 272, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 275, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 278, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-pull-0 {
+    right: 0%;
+  }
+
+  /* line 281, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 284, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 287, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 290, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 293, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 296, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 299, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 302, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 305, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 308, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 311, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 314, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 317, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-push-0 {
+    left: 0%;
+  }
+
+  /* line 320, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 323, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+
+  /* line 326, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 329, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 332, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 335, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 338, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 341, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 344, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 347, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 350, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 353, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 356, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 361, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .container {
+    width: 970px;
+    width: 100%;
+  }
+
+  /* line 366, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+    float: left;
+  }
+
+  /* line 369, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 372, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 375, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 378, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 381, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 384, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 387, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 390, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 393, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 396, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 399, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 402, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 405, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 408, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 411, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 414, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 417, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 420, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 423, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 426, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 429, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 432, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 435, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 438, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 441, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-pull-0 {
+    right: 0%;
+  }
+
+  /* line 444, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 447, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 450, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 453, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 456, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 459, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 462, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 465, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 468, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 471, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 474, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 477, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 480, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-push-0 {
+    left: 0%;
+  }
+
+  /* line 483, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 486, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+
+  /* line 489, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 492, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 495, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 498, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 501, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 504, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 507, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 510, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 513, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 516, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 519, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 524, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .container {
+    width: 970px;
+    width: 750px;
+  }
+
+  /* line 528, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+    float: left;
+  }
+
+  /* line 531, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 534, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-11 {
+    width: 91.66666666666666%;
+  }
+
+  /* line 537, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-10 {
+    width: 83.33333333333334%;
+  }
+
+  /* line 540, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 543, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-8 {
+    width: 66.66666666666666%;
+  }
+
+  /* line 546, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-7 {
+    width: 58.333333333333336%;
+  }
+
+  /* line 549, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 552, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-5 {
+    width: 41.66666666666667%;
+  }
+
+  /* line 555, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+
+  /* line 558, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 561, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-2 {
+    width: 16.666666666666664%;
+  }
+
+  /* line 564, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-1 {
+    width: 8.333333333333332%;
+  }
+
+  /* line 567, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 570, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  /* line 573, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  /* line 576, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 579, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  /* line 582, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  /* line 585, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 588, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  /* line 591, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  /* line 594, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 597, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  /* line 600, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  /* line 603, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-pull-0 {
+    right: 0%;
+  }
+
+  /* line 606, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 609, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  /* line 612, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  /* line 615, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 618, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  /* line 621, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  /* line 624, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 627, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  /* line 630, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  /* line 633, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 636, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  /* line 639, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  /* line 642, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-push-0 {
+    left: 0%;
+  }
+
+  /* line 645, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 648, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+
+  /* line 651, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  /* line 654, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 657, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  /* line 660, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  /* line 663, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 666, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  /* line 669, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  /* line 672, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 675, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  /* line 678, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  /* line 681, ../../../gridy-assets-src/css/sass/_bootstrap-grid.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+/* line 53, ../../../gridy-assets-src/css/sass/style.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 59, ../../../gridy-assets-src/css/sass/style.scss */
+.hidden {
+  display: none;
+}
+
+/* line 62, ../../../gridy-assets-src/css/sass/style.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 66, ../../../gridy-assets-src/css/sass/style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 71, ../../../gridy-assets-src/css/sass/style.scss */
+body {
+  background-color: #333;
+  color: #464646;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: Cambria, Georgia, serif;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  /* line 71, ../../../gridy-assets-src/css/sass/style.scss */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* line 83, ../../../gridy-assets-src/css/sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* line 91, ../../../gridy-assets-src/css/sass/style.scss */
+a {
+  color: #F05526;
+  text-decoration: none;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 97, ../../../gridy-assets-src/css/sass/style.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 101, ../../../gridy-assets-src/css/sass/style.scss */
+.vertical-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 106, ../../../gridy-assets-src/css/sass/style.scss */
+p {
+  margin: 0 0 1em 0;
+}
+
+/* Blog Header */
+/* line 112, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  padding: 7px;
+}
+/* line 119, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .inner {
+  height: 100%;
+  background-color: #333;
+  position: relative;
+  overflow: hidden;
+}
+/* line 126, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-cover {
+  background-color: #333;
+  height: 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 136, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-branding {
+  text-align: center;
+  position: relative;
+}
+/* line 140, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-logo {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 0%;
+  border-radius: 0%;
+  border: 0px solid white;
+  margin-top: 25px;
+  overflow: hidden;
+}
+/* line 148, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-logo img {
+  width: 125px;
+  height: 125px;
+}
+/* line 153, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-title {
+  font-size: 1.5em;
+  margin: -.25em 0;
+}
+@media (max-width: 320px) {
+  /* line 153, ../../../gridy-assets-src/css/sass/style.scss */
+  #blog-header .blog-title {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  /* line 153, ../../../gridy-assets-src/css/sass/style.scss */
+  #blog-header .blog-title {
+    margin-top: -.25em;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 769px) {
+  /* line 153, ../../../gridy-assets-src/css/sass/style.scss */
+  #blog-header .blog-title {
+    margin-top: -.25em;
+    font-size: 1.5em;
+  }
+}
+/* line 167, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-title a {
+  color: white;
+}
+/* line 169, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-title a:hover {
+  text-decoration: none;
+  color: #F05526;
+}
+/* line 175, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-header .blog-description {
+  margin: 1em 0 .5em 0;
+  padding: 0 .5em;
+  font-size: 15px;
+  color: white;
+  font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+@media (max-width: 320px) {
+  /* line 175, ../../../gridy-assets-src/css/sass/style.scss */
+  #blog-header .blog-description {
+    font-size: 12px;
+    color: white;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  /* line 175, ../../../gridy-assets-src/css/sass/style.scss */
+  #blog-header .blog-description {
+    padding: 0 3em;
+    color: white;
+    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+@media (max-width: 768px) {
+  /* line 112, ../../../gridy-assets-src/css/sass/style.scss */
+  #blog-header {
+    width: 100%;
+    position: static;
+  }
+}
+
+/* line 193, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts {
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 320px) {
+  /* line 193, ../../../gridy-assets-src/css/sass/style.scss */
+  #social-accounts {
+    padding-top: 2em;
+    bottom: 0;
+   }
+}
+/* line 210, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a {
+  background-color: #adbcc3;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  margin: 0 0.5em 1em 0.5em;
+}
+/* line 221, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a:hover {
+  background-color: #F05526;
+  text-decoration: none;
+}
+@media (max-width: 320px) {
+  /* line 210, ../../../gridy-assets-src/css/sass/style.scss */
+  #social-accounts a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+  }
+}
+/* line 232, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.email {
+  background-color: #dd4b39;
+}
+/* line 234, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.email:hover {
+  background-color: #e47365;
+}
+/* line 238, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.donation {
+  background-color: #ac6428;
+}
+/* line 240, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.donation:hover {
+  background-color: #d07d37;
+}
+/* line 244, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.twitter {
+  background-color: #00aced;
+}
+/* line 246, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.twitter:hover {
+  background-color: #21c2ff;
+}
+/* line 250, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.facebook {
+  background-color: #3b5998;
+}
+/* line 252, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.facebook:hover {
+  background-color: #4c70ba;
+}
+/* line 256, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.google-plus {
+  background-color: #dd4b39;
+}
+/* line 258, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.google-plus:hover {
+  background-color: #e47365;
+}
+/* line 262, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.youtube {
+  background-color: #bb0000;
+}
+/* line 264, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.youtube:hover {
+  background-color: #ee0000;
+}
+/* line 268, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.linkedin {
+  background-color: #007bb6;
+}
+/* line 270, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.linkedin:hover {
+  background-color: #009de9;
+}
+/* line 274, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.instagram {
+  background-color: #517fa4;
+}
+/* line 276, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.instagram:hover {
+  background-color: #7098b8;
+}
+/* line 280, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.pinterest {
+  background-color: #cb2027;
+}
+/* line 282, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.pinterest:hover {
+  background-color: #e03e44;
+}
+/* line 286, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.flickr {
+  background-color: #ff0084;
+}
+/* line 288, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.flickr:hover {
+  background-color: #ff339d;
+}
+/* line 292, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.tumblr {
+  background-color: #32506d;
+}
+/* line 294, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.tumblr:hover {
+  background-color: #426a90;
+}
+/* line 298, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.vimeo {
+  background-color: #aad450;
+}
+/* line 300, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.vimeo:hover {
+  background-color: #bede79;
+}
+/* line 304, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.foursquare {
+  background-color: #0072b1;
+}
+/* line 306, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.foursquare:hover {
+  background-color: #0093e4;
+}
+/* line 310, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.dribbble {
+  background-color: #ea4c89;
+}
+/* line 312, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.dribbble:hover {
+  background-color: #ef7aa7;
+}
+/* line 316, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.skype {
+  background-color: #019fe6;
+}
+/* line 318, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.skype:hover {
+  background-color: #1cb8fe;
+}
+/* line 322, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.stack-overflow {
+  background-color: #e67e22;
+}
+/* line 324, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.stack-overflow:hover {
+  background-color: #eb9950;
+}
+/* line 328, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.stack-exchange {
+  background-color: #205296;
+}
+/* line 330, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.stack-exchange:hover {
+  background-color: #2969c0;
+}
+/* line 334, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.rss {
+  background-color: #e67e22;
+}
+/* line 336, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.rss:hover {
+  background-color: #eb9950;
+}
+/* line 340, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.weibo {
+  background-color: #e62227;
+}
+/* line 342, ../../../gridy-assets-src/css/sass/style.scss */
+#social-accounts a.weibo:hover {
+  background-color: #eb5054;
+}
+
+/* line 349, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content {
+  padding: 7px 8px 7px 250px;
+}
+@media (max-width: 768px) {
+  /* line 349, ../../../gridy-assets-src/css/sass/style.scss */
+  #blog-content {
+    padding: 0 7px 7px;
+  }
+}
+/* line 354, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container {
+  position: relative;
+}
+/* line 356, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry-innerwrap {
+  background-color: black;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 362, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry-innerwrap:hover {
+}
+/* line 366, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link {
+  background-color: white;
+  padding: 1.2em 1.2em 0 1.2em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  position: relative;
+}
+/* line 374, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link:hover {
+  text-decoration: none;
+}
+/* line 377, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link:hover .post-text-layer .post-title {
+  color: #F05526;
+}
+/* line 382, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link:active {
+  text-decoration: none;
+}
+/* line 385, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer {
+  width: 100%;
+  height: 100%;
+}
+/* line 388, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-title {
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: #2b2b2b;
+}
+/* line 394, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-title a {
+  color: #2b2b2b;
+}
+/* line 397, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-title a:hover {
+  color: #F05526;
+  text-decoration: none;
+}
+/* line 401, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-title a:active {
+  color: #F05526;
+}
+/* line 405, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-meta {
+  font-size: 14px;
+  margin: 1em 0 0.75em;
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+/* line 412, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-meta time:before {
+  content: '\2014';
+  margin-right: 0.5em;
+  opacity: 0.5;
+}
+/* line 417, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-meta time:after {
+  content: '\2014';
+  margin-left: 0.5em;
+  opacity: 0.5;
+}
+/* line 424, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .post-text-layer .post-excerpt {
+  font-size: 16px;
+  margin: 0;
+}
+/* line 429, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .post-link .bottom-fade {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, white), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 70%, #ffffff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 446, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry.post-with-thumbnail .post-link {
+  background-color: transparent;
+}
+/* line 448, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry.post-with-thumbnail .post-link .bottom-fade {
+  display: none;
+}
+/* line 451, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry.post-with-thumbnail .post-link .post-text-layer {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1.6em 1.2em 0.8em 1.2em;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.75)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 465, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry.post-with-thumbnail .post-link .post-text-layer .post-title {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+/* line 470, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry.post-with-thumbnail .post-link .post-text-layer .post-excerpt {
+  display: none;
+}
+/* line 473, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry.post-with-thumbnail .post-link .post-text-layer .post-meta {
+  color: #ccc;
+  margin-top: 0.75em;
+  margin-bottom: 0;
+}
+/* line 479, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .megafolio-container .mega-entry.post-with-thumbnail .post-link:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 485, ../../../gridy-assets-src/css/sass/style.scss */
+#blog-content .pagination {
+  display: none;
+}
+
+/* Post Template */
+/* line 492, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template #main-content {
+  background-color: white;
+}
+/* line 495, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post {
+  padding: 3.375em 0;
+}
+/* line 498, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-header {
+  text-align: center;
+}
+/* line 501, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-title {
+  font-size: 2.25em;
+  line-height: 1.1;
+  color: #2b2b2b;
+}
+@media (max-width: 320px) {
+  /* line 501, ../../../gridy-assets-src/css/sass/style.scss */
+  body.post-template .post-title {
+    font-size: 1.5em;
+  }
+}
+/* line 508, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-title a {
+  color: #2b2b2b;
+  padding: 0 0.3em;
+}
+/* line 512, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-title a:hover {
+  color: #F05526;
+  text-decoration: none;
+}
+/* line 516, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-title a:active {
+  color: #F05526;
+}
+/* line 520, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-meta {
+  font-style: italic;
+  margin: 1.5em 0 2.25em;
+  font-size: 16px;
+  line-height: 1.75;
+}
+/* line 524, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-meta .author-link {
+  font-style: normal;
+}
+/* line 529, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-excerpt {
+  font-size: 20px;
+  margin-bottom: 1.5em;
+}
+/* line 533, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content {
+  font-size: 20px;
+  margin-bottom: 3.375em;
+}
+@media (max-width: 320px) {
+  /* line 533, ../../../gridy-assets-src/css/sass/style.scss */
+  body.post-template .post-content {
+    font-size: 16px;
+  }
+}
+/* line 538, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content h1 {
+  font-size: 2.25em;
+}
+/* line 539, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content h2 {
+  font-size: 1.8em;
+}
+/* line 540, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content h3 {
+  font-size: 1.5em;
+}
+/* line 541, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content h4 {
+  font-size: 1.2em;
+}
+/* line 542, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content h5 {
+  font-size: 1em;
+}
+/* line 543, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content h6 {
+  font-size: 0.8em;
+}
+/* line 544, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content h1, body.post-template .post-content h2, body.post-template .post-content h3, body.post-template .post-content h4, body.post-template .post-content h5, body.post-template .post-content h6 {
+  margin-bottom: 0.3em;
+}
+/* line 546, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content .image-p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 1.875em;
+}
+/* line 551, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content .image-link {
+  display: block;
+  margin-bottom: 0.75em;
+}
+/* line 553, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content .image-link img {
+  vertical-align: middle;
+}
+/* line 556, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content .image-link:hover {
+}
+/* line 562, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content iframe {
+  vertical-align: middle;
+}
+/* line 565, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content p {
+  margin: 0 0 1.5em;
+}
+/* line 567, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content p img {
+  max-width: 100%;
+  vertical-align: middle;
+  margin-bottom: 1.5em;
+}
+/* line 571, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content p img:last-child {
+  margin-bottom: 0;
+}
+/* line 576, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content p:last-child {
+  margin-bottom: 0;
+}
+/* line 579, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content code, body.post-template .post-content kbd, body.post-template .post-content pre, body.post-template .post-content samp {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: .8em;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+/* line 582, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content code {
+  padding: 0 0.3em;
+  background-color: rgba(0, 0, 0, 0.07);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 587, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content pre code {
+  display: block;
+  padding: 1em 1.2em;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+/* line 593, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  margin: 1.5em 0;
+}
+/* line 598, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content blockquote {
+  border-left: 2px solid rgba(0, 0, 0, 0.07);
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+}
+/* line 604, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-content s, body.post-template .post-content strike, body.post-template .post-content del {
+  color: gray;
+}
+/* line 608, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-photo, body.post-template .post-video, body.post-template .post-audio {
+  margin-bottom: 1.5em;
+}
+/* line 612, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-photo img {
+  max-width: 100%;
+}
+/* line 616, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
+/* line 627, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-video iframe,
+body.post-template .post-video object,
+body.post-template .post-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 635, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share {
+  padding-bottom: 2.25em;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.07);
+  margin-bottom: 2.25em;
+  text-align: center;
+}
+/* line 640, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a {
+  background-color: #F05526;
+  font-size: 20px;
+  color: white;
+  margin: 0 0.5em;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+}
+/* line 652, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a:hover {
+  background-color: #ee6a78;
+  text-decoration: none;
+}
+/* line 657, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a.twitter {
+  background-color: #00aced;
+}
+/* line 659, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a.twitter:hover {
+  background-color: #21c2ff;
+}
+/* line 663, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a.facebook {
+  background-color: #3b5998;
+}
+/* line 665, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a.facebook:hover {
+  background-color: #4c70ba;
+}
+/* line 669, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a.google-plus {
+  background-color: #dd4b39;
+}
+/* line 671, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .share a.google-plus:hover {
+  background-color: #e47365;
+}
+/* line 676, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer #share-this-post, body.post-template .post-footer #about-the-author {
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+/* line 680, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .author {
+  text-align: center;
+  color: #333;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 689, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .author .author-overlay {
+  padding: 2em 4em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white;
+}
+@media (max-width: 767px) {
+  /* line 689, ../../../gridy-assets-src/css/sass/style.scss */
+  body.post-template .post-footer .author .author-overlay {
+    padding: 2em;
+  }
+}
+/* line 697, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .author .author-name {
+  line-height: 1.5;
+}
+/* line 700, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .author .author-image {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  width: 80px;
+  height: 80px;
+  border: 0px solid white;
+}
+/* line 706, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .author p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/* line 709, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .author p a {
+  color: white;
+}
+/* line 711, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template .post-footer .author p a:hover {
+  text-decoration: underline;
+}
+/* line 719, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template #post-comments {
+  padding-bottom: 3.375em;
+}
+/* line 721, ../../../gridy-assets-src/css/sass/style.scss */
+body.post-template #post-comments #disqus_thread {
+  border-top: 1px dotted rgba(0, 0, 0, 0.07);
+  padding-top: 3.375em;
+}
+
+/* line 729, ../../../gridy-assets-src/css/sass/style.scss */
+.site-footer {
+  padding: 1em;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: transparent;
+}
+/* line 735, ../../../gridy-assets-src/css/sass/style.scss */
+.site-footer .inner {
+  color: #bbb;
+}

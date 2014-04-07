@@ -1,0 +1,19 @@
+{{!< default}}
+
+{{! The main content area on the homepage }}
+<section class="main-content container">
+	<div class="row">
+		<div class="post-list">
+			{{#foreach posts}}
+			<article class="entry-post {{post_class}}">
+				<time class="entry-date">{{date format="MMM DD, YYYY"}}</time>
+				<h2 class="entry-title">
+					<a href="{{url}}">{{{title}}}</a>
+				</h2>
+				<p>{{excerpt words="75"}}&#8230;</p>
+			</article>
+			{{/foreach}}
+		</div>
+		{{pagination}}
+	</div>
+</section>

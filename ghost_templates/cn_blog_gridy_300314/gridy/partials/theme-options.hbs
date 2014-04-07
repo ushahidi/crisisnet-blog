@@ -1,0 +1,74 @@
+{{!--
+
+  Theme Options Configuration File
+
+  Grid Options:
+  	- layout: Defines the Grid, Grids used in the Gallery. This can be a single Value, or even more values.
+  	          2-9 (Special Grids),  2 = 2 Entry  3 = 3 Entry etc..
+  	          11,12,13,14 (for Square Grids. 11=3 in the Row, 12= 4 in the Row, 13=5 in the Row, 14=6 in the Row)
+  	- animation: This Option defines which Transition is used if the Entries disappearing or appearing after a filter has been activated.
+  	             Possible settings: fade, rotate, scale, rotatescale, pagetop, pagebottom, pagemiddle
+
+  Google Analytics Help Link:
+  	- Find your tracking code & property ID in your account: https://support.google.com/analytics/answer/1032385?hl=en
+
+  Disqus Help Link:
+  	- What's a shortname?: http://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+
+  Supported Social Accounts:
+	- email
+	- donation
+	- dribbble
+	- facebook
+	- foursquare
+	- github
+	- google-plus
+	- instagram
+	- linkedin
+	- pinterest
+	- rss
+	- skype
+	- stack-exchange
+	- stack-overflow
+	- tumblr
+	- twitter
+	- vimeo
+	- weibo
+	- youtube
+
+ --}}
+
+var TAThemeOptions = {
+	grid: {
+		layout: [10], {{! Available values: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}}
+		animation: 'pagetop', {{! Available values: fade, rotate, scale, rotatescale, pagetop, pagebottom, pagemiddle }}
+
+	},
+	googleAnalytics : { {{! Google Analytics Settings }}
+		enabled : true,
+		account : 'UA-XXXXXXXX-X' {{! Replace this value by your Google Analytics account }}
+	},
+	disqus: { {{! Disqus Settings }}
+		enabled : true,
+		shortname : 'your-disqus-shortname' {{! Replace this value by your Disqus shortname }}
+	},
+	socialAccounts: { {{! Social Accounts Settings }}
+		enabled : true,
+		colorful : true,
+		accounts : {
+			'rss' : '{{@blog.url}}/rss/',
+			'twitter' : 'https://twitter.com/crisisnet',
+			'github' : 'https://github.com/ushahidi/crisisnet'
+
+		}
+	}
+}
+
+
+
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+
+if( typeof disqus_shortname === 'undefined' && TAThemeOptions.disqus.enabled ){
+	var disqus_shortname = TAThemeOptions.disqus.shortname;
+}

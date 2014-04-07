@@ -1,0 +1,466 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/**********************************************************************************
+                color variable
+**********************************************************************************/
+@theme-color: #333333;
+@back-color: #F5F5F5;
+@white: #fff;
+@black: #000;
+@text-color: #545454;
+
+/* default style style **************************************************/
+
+body {
+    background-color: @back-color;
+    font-size: 16px;
+    color: @text-color;
+}
+a {
+    text-decoration: none;
+    color: @theme-color;
+        &:hover {
+            text-decoration: none;
+            color: @text-color;
+            -webkit-transition: all .2s ease;
+           -moz-transition: all .2s ease;
+            -ms-transition: all .2s ease;
+             -o-transition: all .2s ease;
+                transition: all .2s ease;
+        }
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+/* header style **************************************************/
+.site-header {
+    background-color: @theme-color;
+    background-size: cover;
+    border-bottom: 5px solid @theme-color;
+    margin: 0 0 40px 0;
+        .container {
+            text-align: center;
+            padding: 50px 0;
+                .logo {
+                    font-size: 4.6em;
+                        a, a:hover{
+                            color: @white;
+                        }
+                }
+                .site-description {
+                    color: @white;
+                    font-weight: normal;
+                    font-size: 1.6em;
+                }
+        }
+
+}
+
+/* content style **************************************************/
+    .single-post-container{
+        width: 100%;
+    }
+    .post-container, .single-post-container{
+        margin: 0 0 40px 0;
+            .post {
+                background: @white;
+                -webkit-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+                -moz-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+                -o-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+                box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+                    img {
+                        width: 100%;
+                    }
+                    .post-header, .post-content, .post-footer {
+                        padding: 0 30px;
+                    }
+                    .post-header {
+                        margin: 0;
+                        padding-top: 20px;
+                            .post-title {
+                                margin: 2em, 0;
+                                color: @theme-color;
+                                font-size: 2.5em;
+                            }
+                    }
+                    .post-content {
+                        margin: 20px 0;
+                        font-size: 18px;
+                    }
+                    .post-content a {
+                        color: #F05526;
+                    }
+                    .post-footer {
+                        padding: 10px 20px;
+                        font-size: 13px;
+                        border-top: 1px dashed lighten(@text-color, 40%);
+                        i {
+                            font-size: 16px;
+                            margin: 0 5px 0 0;
+                        }
+                        span {
+                            margin: 0 20px 0 0;
+                        }
+                        .tags {
+                            margin-top: 5px;
+                        }
+
+                    }
+            }
+    }
+
+.page {
+    padding-bottom: 5px;
+}
+
+/* load more button **************************************************/
+.load-more {
+    background: @theme-color;
+    color: @white;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 20px;
+    border: 1px solid @theme-color;
+        &:hover {
+            background: white;
+            color: @theme-color;
+        }
+        i, span {
+            color: @white;
+        }
+}
+.pagination-container {
+    display: none;
+}
+
+/* footer style **************************************************/
+.footer-container {
+    text-align: center;
+    background: @theme-color;
+    margin: 40px 0 0 0;
+    padding: 50px 0;
+        .social-link {
+            padding: 0px;
+            li {
+                display: inline;
+                    a {
+                        display: inline-block;
+                        font-size: 1em;
+                        padding: 6px;
+                        margin: 5px 3px;
+                        width: 32px;
+                        text-align: center;
+                            background: @white;
+                            color: @theme-color;
+                            &:hover {
+                                background: darken(@white, 10%);
+                            }
+                    }
+            }
+        }
+        .static-nav, .copyright {
+            color: @white;
+            font-size: 13px;
+            margin: 5px 0;
+                a {
+                    color: darken(@white, 10%);
+                        &:hover {
+                            color: @white;
+                        }
+                }
+        }
+}
+
+
+/* sidebar style **************************************************/
+.sidebar {
+    background: @white;
+    -webkit-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+    -moz-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+    -o-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+    box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+        .author {
+            padding: 20px 30px;
+                .profile-image {
+                    float: left;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50px;
+                    border: 1px solid @theme-color;
+                    padding: 3px;
+                    background: @white;
+                    margin: 0 20px 0 0;
+                        &:hover {
+                            border: 3px solid @theme-color;
+                        }
+                }
+        }
+        .author-bio {
+            padding: 20px 30px;
+            border-top: 1px dashed lighten(@text-color, 40%);
+        }
+        .share {
+            padding: 20px 30px;
+            border-top: 1px dashed lighten(@text-color, 40%);
+                .share-link {
+                    padding: 0px;
+                        li {
+                            display: inline;
+                                a {
+                                    display: inline-block;
+                                    font-size: 1em;
+                                    padding: 6px;
+                                    margin: 5px 3px;
+                                    width: 32px;
+                                    text-align: center;
+                                        background: @theme-color;
+                                        color: @white;
+                                        &:hover {
+                                            background: lighten(@theme-color, 10%);
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+/* comment style **************************************************/
+.disqus-container {
+    padding: 30px;
+    background-color: @white;
+    -webkit-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+    -moz-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+    -o-box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+    box-shadow: 0px 0px 2px lighten(@text-color, 30%);
+}
+
+/* scroll to top **************************************************/
+.scrollToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: lighten(@theme-color, 20%);
+    color: @white;
+    font-size: 30px;
+    padding: 4px 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: none;
+        &:hover {
+            background: lighten(@theme-color, 20%);
+        }
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}

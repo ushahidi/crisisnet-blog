@@ -1,0 +1,288 @@
+
+body {
+	font-family: 'Merriweather', Georgia, serif;
+}
+
+
+/* ===================================================================
+	#HEADER SECTION
+=================================================================== */
+.header-section,
+.footer-section {
+	background: #f1f1f1;
+}
+.header-section {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	margin-bottom: 80px;
+}
+.logo {
+	position: absolute;
+	left: 0;
+	bottom: -50%;
+	display: block;
+}
+.branding {
+	float: right;
+	text-align: right;
+}
+.branding .site-title {
+	margin: 0;
+	font-size: 36px;
+	line-height: 1.4;
+	font-family: 'Oswald', sans-serif;
+}
+.branding .site-title,
+.branding .site-title a {
+	color: #101010;
+}
+.branding .site-description {
+	color: #a6a6a6;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+.branding .site-title a:hover {
+	text-decoration: none;
+}
+
+
+/* ===================================================================
+	#POST LIST
+=================================================================== */
+.post-list {
+	margin-bottom: 60px;
+}
+.post-list .entry-post {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-top: 1px solid #efefef;
+}
+.post-list .entry-post:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+.entry-date {
+	color: #ababab;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+}
+.entry-title {
+	font-size: 15px;
+	line-height: 1.4;
+	margin-bottom: 0;
+	margin-top: 5px;
+	color: #114f89;
+}
+.main-content {
+	margin-bottom: 80px;
+}
+
+/* Pagination
+------------------------------------------------------------------- */
+.pagination {
+	text-align: center;
+	font-family: sans-serif;
+}
+.pagination a,
+.entry-tags a {
+	font-weight: bold;
+	border: 1px solid #114f89;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.pagination a {
+	font-size: 16px;
+	padding: 10px 35px;
+}
+.pagination .page-number {
+	line-height: 42px;
+}
+.pagination a:hover,
+.entry-tags a:hover {
+	color: #fff;
+	background: #114f89;
+	text-decoration: none;
+}
+
+
+/* ===================================================================
+	#SINGLE POST
+=================================================================== */
+.single-post.entry-post .entry-title {
+	font-size: 24px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	line-height: 36px;
+	border-bottom: 1px solid #efefef;
+}
+.single-post .entry-content {
+	padding-bottom: 20px;
+	margin-bottom: 45px;
+	border-bottom: 1px solid #efefef;
+}
+
+/* Entry Content Typography
+------------------------------------------------------------------- */
+.entry-content {
+  font-size: 16px;
+}
+.entry-content,
+.entry-content dt,
+.entry-content dd,
+.entry-content li {
+  line-height: 30px;
+}
+.entry-content p,
+.entry-content pre,
+.entry-content dl,
+.entry-content address {
+  margin-bottom: 1.5em
+}
+.entry-content h1 {
+  font-size: 39.5px;
+}
+.entry-content h3 {
+  font-size: 25.5px;
+}
+.entry-content h4 {
+  font-size: 18.5px;
+}
+.entry-content h5 {
+  font-size: 15px;
+}
+.entry-content h6 {
+  font-size: 12.9px;
+}
+.entry-content input[type="submit"] {
+  font-size: 13px;
+  padding: 5px 15px; 
+}
+.entry-content input {
+  margin-bottom: 0
+}
+
+/* Author Box
+------------------------------------------------------------------- */
+.entry-author-box,
+.entry-tags {
+	position: relative;
+	margin-bottom: 45px;
+}
+.entry-author-box h4,
+.entry-tags h4 {
+	font-family: sans-serif;
+	font-size: 18px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+.entry-author-box h5 {
+	font-family: 'Merriweather', serif;
+}
+.entry-author-box .avatar {
+	float: left;
+	margin-right: 18px;
+	-webkit-border-radius: 5px;
+		 -moz-border-radius: 5px;
+					border-radius: 5px;
+}
+.entry-author-box .author-desc {
+	overflow: hidden;
+}
+.entry-author-box .author-desc {
+	font-family: 'Open Sans', sans-serif;
+	color: #898989;
+	font-size: 13px;
+}
+.entry-author-box h5 {
+	font-size: 16px;
+	margin-top: 0;
+	color: #282828;
+}
+
+.entry-tags a {
+	font-size: 9px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 7px 17px;
+	margin-right: 5px;
+}
+
+/* Entry Share
+------------------------------------------------------------------- */
+.entry-share {
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+.entry-share h4 {
+	font-size: 10px;
+	color: #a6a6a6;
+	margin-top: 0;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+.entry-share h4,
+.entry-share a {
+	display: inline-block;
+	margin-left: 5px;
+	*display: inline;
+}
+.entry-share a {
+	font-size: 16px;
+	vertical-align:middle;
+	color: #606060
+}
+
+
+/* ===================================================================
+	#FOOTER SECTION
+=================================================================== */
+.footer-section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.copyright {
+	color: #5c5c54;
+	margin-bottom: 5px;
+}
+.ghost-signature {
+	color: #a4a4a4;
+	font-family: 'Lato', sans-serif;
+}
+
+
+/* ===================================================================
+  #CUSTOM FONT
+=================================================================== */
+@font-face {
+  font-family: 'custom-font';
+  src: url('../fonts/custom-font/custom-font.eot');
+  src: url('../fonts/custom-font/custom-font.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/custom-font/custom-font.woff') format('woff'),
+       url('../fonts/custom-font/custom-font.ttf') format('truetype'),
+       url('../fonts/custom-font/custom-font.svg#custom-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="icon-custom-"]:before {
+  font-family: 'custom-font';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-custom-facebook-sign:before {
+	content: "\e603";
+}
+.icon-custom-twitter-sign:before {
+	content: "\e604";
+}
+.icon-custom-envelope:before {
+	content: "\e605";
+}

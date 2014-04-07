@@ -1,0 +1,50 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+<section class="main-content container">
+	<div class="row">
+		{{#post}}	
+		<article id="post-{{id}}" class="single-post entry-post {{post_class}}">
+			<time class="entry-date">{{date format="MMM DD, YYYY"}}</time>
+			<h2 class="entry-title">{{{title}}}</h2>
+					
+			<div class="entry-content">						
+				{{content}}		
+			</div>
+					
+			<div class="entry-author-box">
+				<div class="entry-inner">
+					<h4>About The Author</h4>
+					{{#if author.image}}
+						<div class="avatar">
+							<img src="{{author.image}}" alt="{{author.name}}" width="79" height="79">
+						</div>
+					{{/if}}
+					<div class="author-desc">
+						<h5>{{author.name}}</h5>
+						<p>{{author.bio}}</p>
+						{{#if author.website}}
+						<p><a href="{{author.website}}" itemprop="url">{{author.website}}</a></p>
+						{{/if}}
+					</div>
+				</div>
+				
+				<div class="entry-share">
+					<h4>Share This Love</h4>
+					<a href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}" class="social-facebook"><i class="icon-custom-facebook-sign"></i></a>
+					<a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" class="social-twitter"><i class="icon-custom-twitter-sign"></i></a>
+					<a href="mailto:?subject={{title}}&body={{excerpt}}%0D%0A{{url absolute="true"}}" class="social-mail"><i class="icon-custom-envelope"></i></a>
+				</div>
+			</div><!-- .entry-author-box -->
+			{{#if tags}}
+				<div class="entry-tags">
+						<h4>Tags</h4>
+						{{tags separator=" , "}}
+				</div>			
+			{{/if}}		
+			
+		</article>
+		{{/post}}
+	</div>
+</section>

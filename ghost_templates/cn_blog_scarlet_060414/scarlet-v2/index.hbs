@@ -1,0 +1,50 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+    {{> header}}
+
+    <!-- start main content section -->
+        <section class="container" >
+            <div class="row" id="container">
+                <!-- post start -->
+                {{! Each post will be output using this markup }}
+                {{#foreach posts}}
+                <div class="col-md-6 col-sm-6 post-container">
+                    <article class="post {{post_class}}">
+                        <!-- feature media start -->
+                        <a href="{{url}}"><div class="append-feature-media"></div></a>
+                        <!-- feature media end -->
+                        <!-- post header -->
+                        <header class="post-header">
+                            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                        </header>
+                        <!-- post content -->
+                        <div class="post-content">
+                            {{! post excerpt}}
+                            {{content words="40"}}
+                            <a href="{{url}}">Read Full Post</a>
+                        </div>
+                        <!-- post footer -->
+                        <footer class="post-footer">
+                            <span class="user"><i class="fa fa-user"></i>{{author.name}}</span><span class="date"><i class="fa fa-calendar"></i>{{date format="DD MMM YYYY"}}</span>
+                            {{#if tags}}
+                            <div class="tags">
+                                <i class="fa fa-tag"></i>{{tags separator=" , "}}
+                            </div>
+                            {{/if}}
+                        </footer>
+                    </article>
+                </div>
+                {{/foreach}}
+                <!-- post end -->
+            </div>
+            <div class="pagination-container">{{pagination}}</div>
+            <div class="row">
+                <div class="col-md-4 col-sm-offset-6 col-md-offset-4"><a href="#" class="load-more">Load More Post</a></div>
+            </div>
+        </section>
+        <!-- end main content section -->
+
+        {{> footer}}
