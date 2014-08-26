@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scarlet-Documentation</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="assets/images/logo.png" alt="" class="logo">
+			<h1>SCARLET V-2.0</h1>
+			<h3>ghost theme documentation</h3>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="#instalation">Instalation</a></li>
+				<li><a href="#configuration">Configuration</a></li>
+				<li><a href="#feature-media">Feature Media</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<p>This documentation is intended to help you properly install and configure the theme on your ghost blog. If you have any questions, please contact via email or leave a comment on my profile.</p>
+			<hr>
+			<h3>Before you start</h3>
+			some links may be useful to get started: <br>
+			<a href="http://docs.ghost.org/">http://docs.ghost.org/</a><br>
+			<a href="https://en.ghost.org/forum/">https://en.ghost.org/forum/</a>
+			<hr>
+			<h3 id="instalation">Instalation:</h3></a>
+			<ul>
+				<li>Open to your FTP client (or explore your ghost directory if you are hosted ghost locally).</li>
+				<li>Navigate to <code>ghost/content/themes</code>.</li>
+				<li>Paste main <strong>scarlet</strong> folder.</li>
+				<li>Restart ghost and log in to your dashboard.</li>
+				<li>In settings under <code>themes</code> select <code>scarlet</code> from dropdown menu. and click <strong>save</strong>.</li>
+			</ul><br>
+			<p>That's the end of the installation process. now it's time to configure your theme.</p>
+			<hr>
+			<h3 id="configuration">Configuration</h3>
+			<p>For a full functionality of this theme, please follow the below steps.</p>
+			<h3 id="general-configuration">General Configuration</h3>
+			<ul>
+				<li>Log in to your dashboard and open settings page of your blog.</li>
+				<li>There fill inputs like blog name, description etc.</li>
+				<li>On <strong>blog logo</strong> you can add your own logo, it will be shown on your blog.</li>
+				<li>On <strong>blog cover</strong> you can add a cover, it will be shown on your blog header. other wise if you leave blank the header will remain flat color.</li>
+				<li>In <strong>user section</strong>, fill areas and add your avatar. That info's and your avatar will be shown at the end of every single post you write.</li>
+				<li>Make sure your avater is square ie. width and height are same. recommended size of avater is 200px X 200px .</li>
+			</ul>
+			<p>Almost done. only remaining thing is to add your social media links and configure your blog with <strong>disqus</strong>.</p><br>
+			<p><strong>To link social media add follow the steps below.</strong></p><br>
+			<strong>*** ! important note: follow this section carefully. ***</strong>
+			<ul>
+				<li>Open <code>scarlet/partials/footer.hbs</code></li>
+				<li>check the area whic is as the below image</li>
+			</ul><br>
+			<img src="assets/images/screenshot.png" alt="screenshot"><br>
+			<ul>
+				<li>now replace the <code>#</code> with your social media profile links. Example in below image</li>
+			</ul><br>
+			<img src="assets/images/screenshot-2.png" alt="screenshot">
+
+			If you want to add any other icon just follow this code below and replace the icon.<br>
+			For Example if you want a dribbble icon then the code will like this.
+			<img src="assets/images/screenshot-7.png" alt="screenshot">
+			For full list of available icon please check this link <a href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a>
+			<hr>
+			<h3 id="nav-configuration">Static navigation configure</h3>
+			<p>To set a post as static page click on the gear (settings) icon and select static</p>
+			<ul>
+				<li>Open <code>scarlet/partials/footer.hbs</code> and find the section as in the below picture</li>
+			</ul>
+			<img src="assets/images/screenshot-12.png" alt="screenshot">
+			<ul>
+				<li>Change the <code>a</code> tag href value (<code>#</code>) to to your post permalink.</li>
+				<li>You are done!</li>
+			</ul>
+			<hr>
+			<h3>Disqus configuration</h3>
+			<ul>
+				<li>Open <code>scarlet/partials/disqus.hbs</code></li>
+				<li>Check the area which is as the below image</li>
+			</ul><br>
+			<img src="assets/images/screenshot-8.png" alt="screenshot"><br>
+			<ul>
+				<li>now replace the <code>example</code> with your Disqus forum shortname. You can setup one on Disqus website. Example in below image</li>
+			</ul><br>
+			<img src="assets/images/screenshot-9.png" alt="screenshot">
+			<hr>
+			<h3>Google Analytics configuration</h3>
+			<ul>
+				<li>Open <code>scarlet/default.hbs</code></li>
+				<li>At the bottom section of the page check the area which is as the below image</li>
+			</ul><br>
+			<img src="assets/images/screenshot-10.png" alt="screenshot"><br>
+			<ul>
+				<li>now replace the <code>UA-XXXXX-X</code> with your own site ID from google analytics</li>
+			</ul><br>
+			<img src="assets/images/screenshot-11.png" alt="screenshot">
+			<hr>
+
+			<h3 id="feature-media">Feature media function</h3>
+			<p>In scarlet theme adding feature media such as Image, vimeo,  youtube, soundcloud, mixcloud or any other iframe objcet is very easy.</p>
+			<p>You have to follow two simple step while posting.</p><br>
+			<ul>
+				<li>write in your post as it is weitten in the following image.</li>
+			</ul>
+			<img src="assets/images/screenshot-3.png" alt="screenshot">
+			<ul>
+				<li>now in the place of <code>your feature media...</code> insert your image or video or sound. See the examples in below images.</li>
+			</ul>
+			<hr>
+			<h3>image as feature media</h3>
+			<img src="assets/images/screenshot-4.png" alt="screenshot">
+			<h3>video from vimeo as feature media</h3>
+			<img src="assets/images/screenshot-5.png" alt="screenshot">
+			<h3>sound from soundcloud as feature media</h3>
+			<img src="assets/images/screenshot-6.png" alt="screenshot">
+			<hr>
+			<strong>Done!</strong> Now you are good to go. Enjoy and keep write on your blog. Happy blogging :)
+			
+			<p>Incase if you are facing any problem regarding this theme, feel free to send a mail to <a href="mailto:gbjsolution@gmail.com">gbjsolution@gmail.com</a> or leave a comment on my profile</p>
+			<hr>
+		</div>
+		<div class="footer">
+			&copy; <a href="http://themeforest.net/user/GBJsolution">GBJ solution</a> . All rights reserved.
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+    {{> header}}
+
+    <!-- start main content section -->
+        <section class="container" >
+            <div class="row">
+                <!-- post start -->
+                {{! Each post will be output using this markup }}
+                {{#post}}
+                <div class="col-md-8 single-post-container">
+                    <article class="post {{post_class}}">
+                        <!-- feature media start -->
+                        <div class="append-feature-media"></div>
+                        <!-- feature media end -->
+                        <!-- post header -->
+                        <header class="post-header">
+                            <h1 class="post-title">{{{title}}}</h1>
+                        </header>
+                        <!-- post content -->
+                        <div class="post-content">
+                            {{! post content}}
+                            {{content}}
+                        </div>
+                        <!-- post footer -->
+                        <footer class="post-footer">
+                            <span class="user"><i class="fa fa-user"></i>{{author.name}}</span><span class="date"><i class="fa fa-calendar"></i>{{date format="DD MMM YYYY"}}</span>
+                            {{#if tags}}
+                            <div class="tags">
+                                <i class="fa fa-tag"></i>{{tags separator=" , "}}
+                            </div>
+                            {{/if}}
+                        </footer>
+                    </article>
+                </div>
+                <!-- start author description -->
+                <!-- <div class="col-md-4">
+                    <div class="sidebar">
+                        {{#if author}}
+                        <div class="author clearfix">
+                            {{#if author.image}}
+                            <img src="{{author.image}}" alt="{{author.name}}" class="profile-image">
+                            {{/if}}
+                            <h4>{{author.name}}</h4>
+                            <p>{{author.location}}</p>
+                        </div>
+                        <div class="author-bio">
+                            <p>{{author.bio}}</p>
+                        </div>
+                        {{/if}}
+                        <div class="share">
+                            <h4>Share this post</h4>
+                            <ul class="share-link">
+                                <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" ><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- end sidebar -->
+                <!-- end author description -->
+                {{/post}}
+                <!-- post end -->
+            </div>
+        </section>
+        <!-- end main content section -->
+
+        {{> footer}}
